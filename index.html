@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Becky Hebron — Makeup Artist</title>
+    <meta
+      name="description"
+      content="High-end bridal, film, and editorial makeup artistry. Crafted beauty for moments that matter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Cinzel:wght@400;500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      type="image/png"
+      rel="icon"
+      href="https://public.readdy.ai/gen_page/readdy-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@600&amp;display=swap"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/posthog-js@1.96.1/dist/array.full.min.js"
+      async=""
+    ></script>
+    <!-- GSAP Library for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="bg-[#0A0806] text-[#E8DFD0] overflow-x-hidden">
+        <section
+          class="hero-section relative min-h-[100dvh] flex flex-col overflow-hidden"
+        >
+          <div
+            class="hero-bg absolute inset-0 w-[120%] h-full -left-[10%]"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate3d(6.4397%, 0px, 0px);
+            "
+          >
+            <img
+              alt=""
+              class="w-full h-full object-cover object-top"
+              loading="eager"
+              src="https://readdy.ai/api/search-image?query=A%20dark%20moody%20editorial%20beauty%20portrait%20of%20a%20woman%20with%20dramatic%20eye%20makeup%20and%20bold%20red%20lips%2C%20warm%20amber%20studio%20lighting%20against%20a%20deep%20black%20background%2C%20high%20fashion%20beauty%20photography%20with%20soft%20glowing%20highlights%20on%20the%20cheekbones%20and%20glossy%20skin%20texture%2C%20luxury%20makeup%20advertisement%20style%2C%20warm%20terracotta%20and%20gold%20color%20tones%2C%20professional%20retouched%20beauty%20image&amp;width=1600&amp;height=900&amp;seq=hero-make&amp;orientation=landscape"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-[#0A0806]/70 via-[#0A0806]/40 to-[#0A0806]/80"
+            ></div>
+          </div>
+          <nav class="relative z-20 w-full px-6 md:px-12 lg:px-20 py-5 md:py-6">
+            <div class="flex items-center justify-between">
+              <button
+                class="font-['Cinzel'] text-xs md:text-sm tracking-[0.25em] text-[#E8DFD0] uppercase hover:text-[#C9A84C] transition-colors duration-300"
+              >
+                BECKYHEBRON
+              </button>
+              <div class="hidden md:flex items-center gap-8 lg:gap-10">
+                <button
+                  class="font-['Cinzel'] text-[10px] lg:text-[11px] tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase"
+                >
+                  ABOUT</button
+                ><button
+                  class="font-['Cinzel'] text-[10px] lg:text-[11px] tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase"
+                >
+                  SERVICES</button
+                ><button
+                  class="font-['Cinzel'] text-[10px] lg:text-[11px] tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase"
+                >
+                  PORTFOLIO</button
+                ><button
+                  class="font-['Cinzel'] text-[10px] lg:text-[11px] tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase"
+                >
+                  CONTACT
+                </button>
+              </div>
+              <button
+                class="hidden md:block font-['Cinzel'] text-[10px] lg:text-[11px] tracking-[0.25em] text-[#E8DFD0] border border-[#E8DFD0]/30 px-5 py-2 hover:border-[#C9A84C] hover:text-[#C9A84C] transition-all duration-300 uppercase"
+              >
+                BOOK</button
+              ><button
+                class="md:hidden font-['Cinzel'] text-[10px] tracking-[0.3em] text-[#E8DFD0]/70 uppercase"
+              >
+                MENU
+              </button>
+            </div>
+          </nav>
+          <div
+            class="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 -mt-10"
+          >
+            <div class="hero-name mb-5 md:mb-7">
+              <div
+                class="font-['Cormorant_Garamond'] text-[clamp(3rem,10vw,8rem)] leading-[0.9] tracking-[-0.01em] text-[#E8DFD0]"
+              >
+                <div class="overflow-hidden">
+                  <span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >B</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >E</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >C</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >K</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >Y</span
+                  >
+                </div>
+                <div class="overflow-hidden">
+                  <span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >H</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >E</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >B</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >R</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >O</span
+                  ><span
+                    class="char inline-block"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                    "
+                    >N</span
+                  >
+                </div>
+              </div>
+            </div>
+            <p
+              class="hero-subtitle font-['Cinzel'] text-[10px] md:text-xs tracking-[0.4em] text-[#C9A84C] uppercase opacity-0"
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                opacity: 1;
+                transform: translate(0px, 0px);
+              "
+            >
+              BIRTHDAYS. BRIDAL. FILM. STUDIO SESSIONS
+            </p>
+          </div>
+          <div
+            class="scroll-indicator absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-0 z-10"
+            style="opacity: 1"
+          >
+            <!-- <span
+              class="font-['Cinzel'] text-[10px] tracking-[0.3em] text-[#E8DFD0]/40 uppercase"
+              >Scroll</span
+            > -->
+            <div
+              class="w-px h-12 md:h-16 bg-[#C9A84C]/20 relative overflow-hidden"
+            >
+              <div
+                class="scroll-indicator-line absolute top-0 left-0 w-full h-5 md:h-6 bg-[#C9A84C]"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform: translate3d(0px, 34.4055px, 0px);
+                "
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="about"
+          class="about-section min-h-screen py-24 md:py-32 lg:py-40 px-8 md:px-16 lg:px-24 flex items-center"
+        >
+          <div class="w-full max-w-7xl mx-auto">
+            <div
+              class="flex flex-col lg:flex-row gap-12 lg:gap-[5%] items-start"
+            >
+              <div
+                class="about-quote lg:w-[60%]"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <p
+                  class="font-['Cormorant_Garamond'] text-[clamp(2.2rem,5.5vw,4.5rem)] italic leading-[1.15] text-[#E8DFD0]"
+                >
+                  “Beauty is not a standard. It is a language.”
+                </p>
+              </div>
+              <div
+                class="about-bio lg:w-[35%] flex flex-col justify-center lg:pt-8"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <p
+                  class="font-['Jost'] text-sm md:text-[15px] leading-[1.8] text-[#E8DFD0]/70"
+                >
+                  For over a decade, I have worked with faces that grace
+                  magazine covers, red carpets, and wedding altars. My approach
+                  is never about masking — it is about revealing. Every
+                  brushstroke is a conversation between light and bone
+                  structure, between intention and instinct. Based between Paris
+                  and Los Angeles, I bring an editorial eye to the most intimate
+                  moments of your life.
+                </p>
+              </div>
+            </div>
+            <div class="about-rule-wrapper mt-16 md:mt-24 lg:mt-32 max-w-xs">
+              <div
+                class="about-rule h-px bg-[#C9A84C] w-full origin-left"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform-origin: 0px 0.495868px;
+                  transform: translate(0px, 0px);
+                "
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="services"
+          class="services-section min-h-screen py-24 md:py-32 lg:py-40 px-8 md:px-16 lg:px-24 flex items-center"
+        >
+          <div class="w-full max-w-4xl mx-auto">
+            <div class="mb-16 md:mb-20">
+              <h2
+                class="font-['Cinzel'] text-[11px] md:text-xs tracking-[0.4em] text-[#C9A84C] uppercase mb-3"
+              >
+                Services
+              </h2>
+              <div class="h-px w-14 bg-[#C9A84C]/40"></div>
+            </div>
+            <div class="divide-y divide-[#E8DFD0]/8">
+              <div
+                class="service-item group relative py-8 md:py-10 cursor-pointer"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#B5522A] transition-all duration-500 ease-out group-hover:w-full group-hover:bg-[#B5522A]/8"
+                ></div>
+                <div class="relative pl-6 md:pl-10">
+                  <h3
+                    class="font-['Cinzel'] text-base md:text-lg tracking-[0.15em] text-[#E8DFD0] group-hover:text-[#C9A84C] transition-colors duration-500 mb-2 md:mb-3"
+                  >
+                    Bridal
+                  </h3>
+                  <p
+                    class="font-['Jost'] text-sm text-[#E8DFD0]/50 group-hover:text-[#E8DFD0]/75 transition-colors duration-500 max-w-xl leading-relaxed"
+                  >
+                    Ceremony-ready looks that endure emotion, weather, and flash
+                    photography.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="service-item group relative py-8 md:py-10 cursor-pointer"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#B5522A] transition-all duration-500 ease-out group-hover:w-full group-hover:bg-[#B5522A]/8"
+                ></div>
+                <div class="relative pl-6 md:pl-10">
+                  <h3
+                    class="font-['Cinzel'] text-base md:text-lg tracking-[0.15em] text-[#E8DFD0] group-hover:text-[#C9A84C] transition-colors duration-500 mb-2 md:mb-3"
+                  >
+                    Film &amp; Television
+                  </h3>
+                  <p
+                    class="font-['Jost'] text-sm text-[#E8DFD0]/50 group-hover:text-[#E8DFD0]/75 transition-colors duration-500 max-w-xl leading-relaxed"
+                  >
+                    High-definition makeup for screens that demand absolute
+                    precision.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="service-item group relative py-8 md:py-10 cursor-pointer"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#B5522A] transition-all duration-500 ease-out group-hover:w-full group-hover:bg-[#B5522A]/8"
+                ></div>
+                <div class="relative pl-6 md:pl-10">
+                  <h3
+                    class="font-['Cinzel'] text-base md:text-lg tracking-[0.15em] text-[#E8DFD0] group-hover:text-[#C9A84C] transition-colors duration-500 mb-2 md:mb-3"
+                  >
+                    Editorial
+                  </h3>
+                  <p
+                    class="font-['Jost'] text-sm text-[#E8DFD0]/50 group-hover:text-[#E8DFD0]/75 transition-colors duration-500 max-w-xl leading-relaxed"
+                  >
+                    Concept-driven artistry for campaigns, lookbooks, and
+                    magazine features.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="service-item group relative py-8 md:py-10 cursor-pointer"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  opacity: 1;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#B5522A] transition-all duration-500 ease-out group-hover:w-full group-hover:bg-[#B5522A]/8"
+                ></div>
+                <div class="relative pl-6 md:pl-10">
+                  <h3
+                    class="font-['Cinzel'] text-base md:text-lg tracking-[0.15em] text-[#E8DFD0] group-hover:text-[#C9A84C] transition-colors duration-500 mb-2 md:mb-3"
+                  >
+                    Masterclass
+                  </h3>
+                  <p
+                    class="font-['Jost'] text-sm text-[#E8DFD0]/50 group-hover:text-[#E8DFD0]/75 transition-colors duration-500 max-w-xl leading-relaxed"
+                  >
+                    Intensive one-on-one sessions in technique, product
+                    knowledge, and creative vision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="portfolio"
+          class="portfolio-section relative md:min-h-screen overflow-hidden bg-[#0A0806]"
+        >
+          <div
+            class="pt-10 md:pt-14 pb-6 md:pb-0 px-6 md:px-16 lg:px-24 md:absolute md:top-10 md:left-8 lg:left-24 z-10"
+          >
+            <h2
+              class="font-['Cinzel'] text-[11px] md:text-xs tracking-[0.4em] text-[#C9A84C] uppercase mb-3"
+            >
+              Selected Work
+            </h2>
+            <div class="h-px w-14 bg-[#C9A84C]/40"></div>
+          </div>
+          <div
+            class="md:hidden overflow-x-auto snap-x snap-mandatory pb-10 pt-4 px-6 -mx-2"
+          >
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Bridal makeup portrait"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Editorial eye makeup"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Film glamour makeup"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Red carpet glamour makeup"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Avant garde makeup art"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+              <div
+                class="flex-shrink-0 snap-start w-[72vw] aspect-[2/3] overflow-hidden"
+              >
+                <img
+                  alt="Natural beauty makeup"
+                  class="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  src=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:flex portfolio-gallery items-center h-screen gap-4 md:gap-6 px-8 md:px-16 lg:px-24 pt-24 md:pt-28"
+            
+          >
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Bridal makeup portrait"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Editorial eye makeup"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Film glamour makeup"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Red carpet glamour makeup"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Avant garde makeup art"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[260px] md:w-[320px] lg:w-[380px] aspect-[2/3] overflow-hidden"
+            >
+              <img
+                alt="Natural beauty makeup"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+                src=""
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          id="testimonials"
+          class="testimonials-section relative py-20 md:py-32 lg:py-40 overflow-hidden"
+        >
+          <div
+            class="testimonial-bg absolute inset-0 pointer-events-none"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+            "
+          >
+            <div
+              class="absolute top-12 right-4 md:right-20 w-32 h-32 md:w-64 md:h-64 border border-[#C9A84C]/8 rounded-full"
+            ></div>
+            <div
+              class="absolute bottom-16 left-2 md:left-12 w-28 h-28 md:w-48 md:h-48 border border-[#9E6B6B]/8 rounded-full"
+            ></div>
+            <div
+              class="absolute top-1/3 left-1/4 w-20 h-20 md:w-32 md:h-32 border border-[#C9A84C]/5 rounded-full"
+            ></div>
+          </div>
+          <div class="relative z-10 px-6 md:px-16 lg:px-24 mb-12 md:mb-20">
+            <h2
+              class="font-['Cinzel'] text-[11px] md:text-xs tracking-[0.4em] text-[#C9A84C] uppercase mb-3"
+            >
+              Words
+            </h2>
+            <div class="h-px w-14 bg-[#C9A84C]/40"></div>
+          </div>
+          <div
+            class="relative z-10 max-w-6xl mx-auto space-y-16 md:space-y-32 lg:space-y-40 px-6 md:px-16 lg:px-24"
+          >
+            <div
+              class="testimonial-quote flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 md:flex-row"
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0px, 0px);
+              "
+            >
+              <div class="w-full md:w-[40%] lg:w-[35%] flex-shrink-0">
+                <div
+                  class="aspect-[4/5] overflow-hidden mx-auto md:mx-0 max-w-[280px] md:max-w-none"
+                >
+                  <img
+                    alt="Camille R., Paris"
+                    class="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    src="images/ref1.jpg"
+                  />
+                </div>
+              </div>
+              <div class="flex-1 md:text-left text-center md:text-left">
+                <p
+                  class="font-['Cormorant_Garamond'] text-[clamp(1.5rem,4vw,3.5rem)] leading-[1.15] text-[#E8DFD0]/90 italic"
+                >
+                  “She does not apply makeup. She uncovers what was already
+                  there.”
+                </p>
+                <p
+                  class="font-['Cinzel'] text-[10px] md:text-xs tracking-[0.3em] text-[#C9A84C] uppercase mt-5 md:mt-8"
+                >
+                  — Camille R., Uyo
+                </p>
+              </div>
+            </div>
+            <div
+              class="testimonial-quote flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 md:flex-row-reverse"
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0px, 0px);
+              "
+            >
+              <div class="w-full md:w-[40%] lg:w-[35%] flex-shrink-0">
+                <div
+                  class="aspect-[4/5] overflow-hidden mx-auto md:mx-0 max-w-[280px] md:max-w-none"
+                >
+                  <img
+                    alt="Elena V., Tuscany"
+                    class="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    src="images/ref2.jpg"
+                  />
+                </div>
+              </div>
+              <div class="flex-1 md:text-right text-center md:text-left">
+                <p
+                  class="font-['Cormorant_Garamond'] text-[clamp(1.5rem,4vw,3.5rem)] leading-[1.15] text-[#E8DFD0]/90 italic"
+                >
+                  “On my wedding day, I felt like the most honest version of
+                  myself.”
+                </p>
+                <p
+                  class="font-['Cinzel'] text-[10px] md:text-xs tracking-[0.3em] text-[#C9A84C] uppercase mt-5 md:mt-8"
+                >
+                  — Grace V., Uyo
+                </p>
+              </div>
+            </div>
+            <div
+              class="testimonial-quote flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 md:flex-row"
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0px, 0px);
+              "
+            >
+              <div class="w-full md:w-[40%] lg:w-[35%] flex-shrink-0">
+                <div
+                  class="aspect-[4/5] overflow-hidden mx-auto md:mx-0 max-w-[280px] md:max-w-none"
+                >
+                  <img
+                    alt="Director, Lumière Films"
+                    class="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    src="images/ref3.jpg"
+                  />
+                </div>
+              </div>
+              <div class="flex-1 md:text-left text-center md:text-left">
+                <p
+                  class="font-['Cormorant_Garamond'] text-[clamp(1.5rem,4vw,3.5rem)] leading-[1.15] text-[#E8DFD0]/90 italic"
+                >
+                  “An artist who understands light the way a cinematographer
+                  does.”
+                </p>
+                <p
+                  class="font-['Cinzel'] text-[10px] md:text-xs tracking-[0.3em] text-[#C9A84C] uppercase mt-5 md:mt-8"
+                >
+                  — Director, Lumière Films
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="contact"
+          class="contact-section min-h-screen py-24 md:py-32 lg:py-40 px-8 md:px-16 lg:px-24 flex items-center border-t border-[#E8DFD0]/8"
+        >
+          <div class="w-full max-w-5xl mx-auto">
+            <div class="contact-reveal mb-12 md:mb-16">
+              <h2
+                class="font-['Cormorant_Garamond'] text-[clamp(2.5rem,7vw,5.5rem)] leading-[1] text-[#E8DFD0] mb-4 md:mb-6"
+              >
+                Begin a Conversation
+              </h2>
+              <div class="h-px w-20 bg-[#C9A84C]"></div>
+            </div>
+            <div
+              class="contact-reveal grid grid-cols-1 lg:grid-cols-2 gap-14 md:gap-20"
+            >
+              <div>
+                <p
+                  class="font-['Jost'] text-sm md:text-[15px] leading-[1.9] text-[#E8DFD0]/65 mb-10 md:mb-12"
+                >
+                  Every face tells a story. I would be honored to help tell
+                  yours. Inquiries for bridal, editorial, and film projects are
+                  welcome. Please allow 48 hours for a response.
+                </p>
+                <a
+                  href="mailto:studio@beckyhebronmakeup.com"
+                  class="font-['Cinzel'] text-xs tracking-[0.2em] text-[#C9A84C] hover:text-[#E8DFD0] transition-colors duration-300 inline-block border-b border-[#C9A84C]/40 pb-1 mb-10 md:mb-12"
+                  >studio@beckyhebronmakeup.com</a
+                >
+                <div class="mb-10 md:mb-12">
+                  <p
+                    class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-4"
+                  >
+                    Follow
+                  </p>
+                  <div class="flex items-center gap-6">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-['Jost'] text-sm text-[#E8DFD0]/60 hover:text-[#C9A84C] transition-colors duration-300"
+                      >Instagram</a
+                    ><a
+                      href="https://pinterest.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-['Jost'] text-sm text-[#E8DFD0]/60 hover:text-[#C9A84C] transition-colors duration-300"
+                      >Pinterest</a
+                    ><a
+                      href="https://tiktok.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-['Jost'] text-sm text-[#E8DFD0]/60 hover:text-[#C9A84C] transition-colors duration-300"
+                      >TikTok</a
+                    >
+                  </div>
+                </div>
+                <div class="space-y-6 md:space-y-8">
+                  <div>
+                    <p
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-2"
+                    >
+                      Uyo Studio
+                    </p>
+                    <p class="font-['Jost'] text-sm text-[#E8DFD0]/60">
+                      Le Marais, 75004
+                    </p>
+                  </div>
+                  <!-- <div>
+                    <p
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-2"
+                    >
+                      Los Angeles
+                    </p>
+                    <p class="font-['Jost'] text-sm text-[#E8DFD0]/60">
+                      Arts District, 90013
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+              <div>
+                <form
+                  data-readdy-form="true"
+                  id="contact-inquiry"
+                  class="space-y-6 md:space-y-8"
+                >
+                  <div>
+                    <label
+                      for="name"
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-3 block"
+                      >Name</label
+                    ><input
+                      id="name"
+                      required=""
+                      class="w-full bg-transparent border-b border-[#E8DFD0]/20 py-3 font-['Jost'] text-sm text-[#E8DFD0] placeholder:text-[#E8DFD0]/30 focus:border-[#C9A84C] focus:outline-none transition-colors duration-300"
+                      placeholder="Your full name"
+                      type="text"
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-3 block"
+                      >Email</label
+                    ><input
+                      id="email"
+                      required=""
+                      class="w-full bg-transparent border-b border-[#E8DFD0]/20 py-3 font-['Jost'] text-sm text-[#E8DFD0] placeholder:text-[#E8DFD0]/30 focus:border-[#C9A84C] focus:outline-none transition-colors duration-300"
+                      placeholder="your@email.com"
+                      type="email"
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="project_type"
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-3 block"
+                      >Project Type</label
+                    ><select
+                      id="project_type"
+                      name="project_type"
+                      required=""
+                      class="w-full bg-transparent border-b border-[#E8DFD0]/20 py-3 font-['Jost'] text-sm text-[#E8DFD0] focus:border-[#C9A84C] focus:outline-none transition-colors duration-300 appearance-none cursor-pointer"
+                      style="background-color: transparent"
+                    >
+                      <option value="" class="bg-[#0A0806]">
+                        Select a project type
+                      </option>
+                      <option value="bridal" class="bg-[#0A0806]">
+                        Bridal
+                      </option>
+                      <option value="editorial" class="bg-[#0A0806]">
+                        Editorial
+                      </option>
+                      <option value="film_tv" class="bg-[#0A0806]">
+                        Film &amp; TV
+                      </option>
+                      <option value="masterclass" class="bg-[#0A0806]">
+                        Masterclass
+                      </option>
+                      <option value="other" class="bg-[#0A0806]">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      for="message"
+                      class="font-['Cinzel'] text-[10px] tracking-[0.4em] text-[#C9A84C] uppercase mb-3 block"
+                      >Message</label
+                    ><textarea
+                      id="message"
+                      name="message"
+                      required=""
+                      rows="4"
+                      maxlength="500"
+                      class="w-full bg-transparent border-b border-[#E8DFD0]/20 py-3 font-['Jost'] text-sm text-[#E8DFD0] placeholder:text-[#E8DFD0]/30 focus:border-[#C9A84C] focus:outline-none transition-colors duration-300 resize-none"
+                      placeholder="Tell me about your vision..."
+                    ></textarea>
+                    <p
+                      class="font-['Jost'] text-[11px] text-[#E8DFD0]/30 mt-2 text-right"
+                    >
+                      Max 500 characters
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <button
+                      type="submit"
+                      class="font-['Cinzel'] text-[11px] tracking-[0.25em] text-[#0A0806] bg-[#C9A84C] px-8 py-3 hover:bg-[#E8DFD0] transition-colors duration-300 uppercase disabled:opacity-50"
+                    >
+                      Send Inquiry
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="contact-reveal mt-20 md:mt-28 pt-8 border-t border-[#E8DFD0]/8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+            >
+              <p
+                class="font-['Cinzel'] text-xs tracking-[0.25em] text-[#E8DFD0]/40 uppercase"
+              >
+                ELISABETTA
+              </p>
+              <p
+                class="font-['Cinzel'] text-[10px] tracking-[0.3em] text-[#E8DFD0]/30 uppercase"
+              >
+                © 2026 Elisabetta. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="hero.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
