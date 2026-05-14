@@ -53,15 +53,25 @@ class HeroSection {
     const nav = this.heroSection.querySelector("nav");
     if (!nav) return;
 
-    const menuButton = nav.querySelector(".md\\:hidden");
-    const mobileNavPanel = nav.querySelector(".md\\:hidden.mt-6");
+    const menuButton = nav.querySelector("button.md\\:hidden");
 
-    // Find or create mobile nav panel
-    let mobilePanel = nav.querySelector(
-      '.md\\:hidden[style*="display: none"], .md\\:hidden.mt-6',
-    );
+    // Create mobile nav panel if it doesn't exist
+    let mobilePanel = nav.querySelector(".mobile-nav-panel");
+    if (!mobilePanel && menuButton) {
+      mobilePanel = document.createElement("div");
+      mobilePanel.className =
+        "mobile-nav-panel md:hidden mt-6 pb-4 border-t border-[#E8DFD0]/10 pt-6 space-y-4 hidden";
+      mobilePanel.innerHTML = `
+        <button class="mobile-nav-item block font-['Cinzel'] text-xs tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase" data-id="about">ABOUT</button>
+        <button class="mobile-nav-item block font-['Cinzel'] text-xs tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase" data-id="services">SERVICES</button>
+        <button class="mobile-nav-item block font-['Cinzel'] text-xs tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase" data-id="portfolio">PORTFOLIO</button>
+        <button class="mobile-nav-item block font-['Cinzel'] text-xs tracking-[0.3em] text-[#E8DFD0]/70 hover:text-[#E8DFD0] transition-colors duration-300 uppercase" data-id="contact">CONTACT</button>
+        <button class="mobile-nav-item block font-['Cinzel'] text-xs tracking-[0.25em] text-[#C9A84C] uppercase mt-2" data-id="contact">BOOK</button>
+      `;
+      nav.appendChild(mobilePanel);
+    }
 
-    // Handle menu toggle
+    // Handle menu button toggle
     if (menuButton) {
       menuButton.addEventListener("click", (e) => {
         e.preventDefault();
@@ -69,27 +79,52 @@ class HeroSection {
       });
     }
 
-    // Setup all navigation links
-    const navLinks = [
-      ...nav.querySelectorAll('button[onclick*="handleNavClick"]'),
-      ...nav.querySelectorAll("[data-nav-id]"),
-    ];
+    // Setup logo button
+    const logoButton = nav.querySelector("button:not(.md\\:hidden)");
+    if (logoButton) {
+      logoButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.handleNavClick("hero");
+      });
+    }
 
-    // Fallback: find all buttons in nav that look like nav links
-    const buttons = nav.querySelectorAll("button:not(.md\\:hidden)");
-    buttons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const text = button.textContent.trim().toUpperCase();
-        const sectionMap = {
-          BECKYHEBRON: "hero",
-          ABOUT: "about",
-          SERVICES: "services",
-          PORTFOLIO: "portfolio",
-          CONTACT: "contact",
-          BOOK: "contact",
-        };
+    // Setup desktop navigation links
+    const desktopNav = nav.querySelector(".hidden.md\\:flex");
+    if (desktopNav) {
+      const desktopButtons = desktopNav.querySelectorAll("button");
+      desktopButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.preventDefault();
+          const text = button.textContent.trim().toUpperCase();
+          const sectionMap = {
+            ABOUT: "about",
+            SERVICES: "services",
+            PORTFOLIO: "portfolio",
+            CONTACT: "contact",
+          };
+          const sectionId = sectionMap[text];
+          if (sectionId) {
+            this.handleNavClick(sectionId);
+          }
+        });
+      });
+    }
 
-        const sectionId = sectionMap[text];
+    // Setup desktop book button
+    const bookButton = nav.querySelector("button.hidden.md\\:block");
+    if (bookButton) {
+      bookButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.handleNavClick("contact");
+      });
+    }
+
+    // Setup mobile navigation items
+    const mobileItems = nav.querySelectorAll(".mobile-nav-item");
+    mobileItems.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const sectionId = item.dataset.id;
         if (sectionId) {
           this.handleNavClick(sectionId);
         }
@@ -103,15 +138,13 @@ class HeroSection {
   toggleMobileMenu() {
     this.navVisible = !this.navVisible;
     const nav = this.heroSection.querySelector("nav");
-    const mobilePanel = nav.querySelector(".md\\:hidden.mt-6");
+    const mobilePanel = nav?.querySelector(".mobile-nav-panel");
+    const menuButton = nav?.querySelector("button.md\\:hidden");
 
     if (mobilePanel) {
-      mobilePanel.style.display = this.navVisible ? "block" : "none";
+      mobilePanel.classList.toggle("hidden", !this.navVisible);
     }
 
-    const menuButton = nav.querySelector(
-      '.md\\:hidden[class*="text-\\[10px\\]"]',
-    );
     if (menuButton) {
       menuButton.textContent = this.navVisible ? "CLOSE" : "MENU";
     }
@@ -126,9 +159,15 @@ class HeroSection {
 
     // Close mobile menu
     const nav = this.heroSection.querySelector("nav");
-    const mobilePanel = nav?.querySelector(".md\\:hidden.mt-6");
+    const mobilePanel = nav?.querySelector(".mobile-nav-panel");
     if (mobilePanel) {
-      mobilePanel.style.display = "none";
+      mobilePanel.classList.add("hidden");
+    }
+
+    // Update menu button text
+    const menuButton = nav?.querySelector("button.md\\:hidden");
+    if (menuButton) {
+      menuButton.textContent = "MENU";
     }
 
     // Scroll to section
